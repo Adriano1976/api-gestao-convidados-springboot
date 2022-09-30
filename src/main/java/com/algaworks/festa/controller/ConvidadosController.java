@@ -1,6 +1,6 @@
 package com.algaworks.festa.controller;
 
-import com.algaworks.festa.repositoty.Convidados;
+import com.algaworks.festa.repositoty.ConvidadosRepositoty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class ConvidadosController {
      * estânciar o objeto quando for chamado aqui na classe.
      */
     @Autowired
-    private Convidados convidados;
+    private ConvidadosRepositoty convidados;
 
     /**
      * Método responsáel por listar os convidados para mostrar na view.
@@ -28,7 +28,7 @@ public class ConvidadosController {
      *
      * @return Retorna a lista de convidados.
      */
-    @GetMapping("/convidados")
+    @GetMapping( value = "/convidados")
     public ModelAndView listar() {
         ModelAndView modelAndView = new ModelAndView("ListaConvidados");
         modelAndView.addObject("convidados", convidados.findAll());
