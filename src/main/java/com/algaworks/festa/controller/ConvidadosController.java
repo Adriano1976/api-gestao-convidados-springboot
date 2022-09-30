@@ -1,9 +1,12 @@
 package com.algaworks.festa.controller;
 
+import com.algaworks.festa.model.Convidado;
 import com.algaworks.festa.repositoty.ConvidadosRepositoty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -12,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
  * <p>A anotação @Controller é para informar que a classe é um componente Spring e que é um controller.</p>
  */
 @Controller
+@RequestMapping("/convidados")
 public class ConvidadosController {
 
     /**
@@ -28,10 +32,17 @@ public class ConvidadosController {
      *
      * @return Retorna a lista de convidados.
      */
-    @GetMapping( value = "/convidados")
+    @GetMapping
     public ModelAndView listar() {
         ModelAndView modelAndView = new ModelAndView("ListaConvidados");
+        modelAndView.addObject(new Convidado());
         modelAndView.addObject("convidados", convidados.findAll());
         return modelAndView;
+    }
+
+    @PostMapping
+    public String salvar(Convidado convidado) {
+        this.convidados.save(convidado);
+        return "redirect:/convidados";
     }
 }

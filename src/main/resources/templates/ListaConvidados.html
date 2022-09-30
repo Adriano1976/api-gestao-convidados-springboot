@@ -12,27 +12,47 @@
 </head>
 <body>
 
+<form class="form-inline" method="post" th:object="${convidado}" th:action="@{/convidados}" style="margin: 20px 0">
+    <div class="form-group">
+        <label>
+            <input type="text" class="form-control" placeholder="Nome" th:field="*{nome}"/>
+        </label>
+        <label>
+            <input type="text" class="form-control" placeholder="Sobrenome" th:field="*{sobrenome}"/>
+        </label>
+        <label>
+            <input type="text" class="form-control" placeholder="Acompanhantes" th:field="*{quantidadeAcompanhantes}"/>
+        </label>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+    </div>
+</form>
+
 <div class="all-classes-container">
-    <div class="even-row-color" style="margin: 10px">
+    <div class="even-row-color" style="margin: 20px">
         <div class="table-header table-sub-heading-color">
             <h1 class="card-title">Lista de convidados</h1>
         </div>
         <div class="all-classes-container">
-            <table class="table-header">
+            <table class="table-header container">
                 <thead>
-                <tr class="container">
-                    <th>Nome</th>
-                    <th>Sobrenome</th>
-                    <th>Acompanhantes</th>
-                </tr>
+                <label>
+                    <tr class="container">
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Acompanhantes</th>
+                    </tr>
+                </label>
                 </thead>
                 <tbody>
                 <!-- A expressão ${convidados} recupera o objeto adicionado pelo controller. -->
-                <tr th:each="convidado : ${convidados}">
-                    <td th:text="${convidado.nome}"></td>
-                    <td th:text="${convidado.sobrenome}"></td>
-                    <td th:text="${convidado.quantidadeAcompanhantes}"></td>
-                </tr>
+                <label>
+                    <tr th:each="convidado : ${convidados}">
+                        <td th:text="${convidado.nome}"></td>
+                        <td th:text="${convidado.sobrenome}"></td>
+                        <td th:text="${convidado.quantidadeAcompanhantes}"></td>
+                    </tr>
+                </label>
+
                 </tbody>
             </table>
         </div>
