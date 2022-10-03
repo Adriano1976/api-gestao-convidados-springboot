@@ -22,7 +22,7 @@ public class Convidado implements Serializable {
 
     @ApiModelProperty(value = "Código do convidado")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "`id`", nullable = false)
     private Long id;
     @ApiModelProperty(value = "Nome do convidado")
@@ -32,7 +32,7 @@ public class Convidado implements Serializable {
     @Column(name = "`sobrenome`", length = 100, nullable = false)
     private String sobrenome;
     @ApiModelProperty(value = "Quantidade de acompanhantes do convidado")
-    @Column(name = "`quantidadeAcompanhantes`", length = 10, nullable = false)
+    @Column(name = "`quant_acompanhante`", length = 10, nullable = false)
     private Integer quantidadeAcompanhantes;
 
     /**
