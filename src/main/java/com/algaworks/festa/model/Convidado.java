@@ -1,8 +1,9 @@
 package com.algaworks.festa.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import io.swagger.annotations.ApiModelProperty;
+
+import javax.persistence.*;
+import java.io.Serial;
 import java.io.Serializable;
 
 /**
@@ -14,13 +15,24 @@ import java.io.Serializable;
  *
  */
 @Entity
+@Table(name = "`tb_convidado`")
 public class Convidado implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
+    @ApiModelProperty(value = "Código do convidado")
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "`id`", nullable = false)
     private Long id;
+    @ApiModelProperty(value = "Nome do convidado")
+    @Column(name = "`nome`", length = 100, nullable = false)
     private String nome;
+    @ApiModelProperty(value = "Sobrenome do convidado")
+    @Column(name = "`sobrenome`", length = 100, nullable = false)
     private String sobrenome;
+    @ApiModelProperty(value = "Quantidade de acompanhantes do convidado")
+    @Column(name = "`quantidadeAcompanhantes`", length = 10, nullable = false)
     private Integer quantidadeAcompanhantes;
 
     /**
