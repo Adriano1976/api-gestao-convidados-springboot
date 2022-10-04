@@ -1,8 +1,8 @@
-# Gestao de Convidado
+# Gestão de Convidados
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Adriano1976/api-gestao-convidados-springboot/blob/master/LICENSE) 
 
-# Sobre o projeto
+# Sobre o Projeto
 
 Gestão de Convidados é uma aplicação back End web e mobile construída seguindo as instruções da apostila Produtividade no Desenvolvimento de Aplicações Web com Spring Boot, sendo essa a 2ª Edição e foi organizados por [Normandes José Moreira Junior]( https://www.linkedin.com/in/normandesjr "Site LinkedIn") e [Alexandre Afonso](https://www.linkedin.com/in/alexandreafon "Site LinkedIn").
 
@@ -24,6 +24,7 @@ Caso queira navegar e conhecer a extrutura do projeto, basta usar os recursos di
 * https://adriano1976.github.io/gestao-de-festa-javadoc/
 
 # Tecnologias utilizadas
+- Intellij Ide
 - Java
 - Spring Boot
 - Spring Web
