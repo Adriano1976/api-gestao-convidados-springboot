@@ -61,7 +61,7 @@ yarn start
 
 # Front End com Swagger
 
-Depois de executar o projeto via terminal ou via IDE, você poderá fazer os testes com os recursos disponibilizado pelo Swagger de acordo com o projeto atual.
+Depois de executar o projeto via terminal ou via IDE, você poderá fazer os testes com os recursos disponibilizados pelo Swagger de acordo com o projeto atual.
 
 * http://localhost:8080/swagger-ui.html
 
