@@ -54,6 +54,7 @@
                 <thead>
                 <label class="card-title">
                     <tr class="container">
+                        <th>Código</th>
                         <th>Nome</th>
                         <th>Sobrenome</th>
                         <th>Acompanhantes</th>
@@ -64,6 +65,7 @@
                 <!-- A expressão ${convidados} recupera o objeto adicionado pelo controller. -->
                 <label class="card-body">
                     <tr class="container" th:each="convidado : ${convidados}">
+                        <td th:text="${convidado.id}"></td>
                         <td th:text="${convidado.nome}"></td>
                         <td th:text="${convidado.sobrenome}"></td>
                         <td th:text="${convidado.quantidadeAcompanhantes}"></td>
