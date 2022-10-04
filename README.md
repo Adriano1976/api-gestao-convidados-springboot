@@ -64,9 +64,9 @@ yarn start
 
 # Front End com Swagger
 
-![gestao-festa - swagger-ui](https://user-images.githubusercontent.com/17755195/193941528-027f6b9b-8a0f-4f62-ad84-a51f43bd584b.png)
-
 Depois de executar o projeto via terminal ou via IDE, você poderá fazer os testes com os recursos disponibilizados pelo Swagger de acordo com o projeto atual.
+
+![gestao-festa - swagger-ui](https://user-images.githubusercontent.com/17755195/193941528-027f6b9b-8a0f-4f62-ad84-a51f43bd584b.png)
 
 * http://localhost:8080/swagger-ui.html
 
