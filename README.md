@@ -18,6 +18,8 @@ A aplicação consiste em uma lista de controle de convidados de festas e evento
 
 ## Documentação JavaDoc
 
+Caso queira navegar e conhecer a extrutura do projeto, basta usar os recursos disponíveis pelo java doc por meio do link disponibilizado para que você posso já ter uma experiência com o projeto antes mesmo de instalar em sua máquina.
+
 ![documentação gestão de festa javadoc](https://user-images.githubusercontent.com/17755195/193870848-7341ee92-fc6c-4d51-9764-3f3b0d75036d.png)
 * https://adriano1976.github.io/gestao-de-festa-javadoc/
 
