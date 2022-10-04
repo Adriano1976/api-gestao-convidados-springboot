@@ -6,7 +6,7 @@
 
 Gestão de Convidados é uma aplicação back End web e mobile construída seguindo as instruções da apostila Produtividade no Desenvolvimento de Aplicações Web com Spring Boot, sendo essa a 2ª Edição e foi organizados por [Normandes José Moreira Junior]( https://www.linkedin.com/in/normandesjr "Site LinkedIn") e [Alexandre Afonso](https://www.linkedin.com/in/alexandreafon "Site LinkedIn").
 
-A aplicação consiste em uma lista de controle de convidados de festas e eventos, onde os dados são coletados, como nome, sobrenome e quantidades de acompanhantes, e depois são listados no app web. Essas visualizações são possíveis por meio do Swagger e JavaDoc.
+A aplicação consiste em uma lista de controle de convidados de festas e eventos, onde os dados são coletados, como nome, sobrenome e quantidades de acompanhantes, e depois são listados no app web. Porém, foram feitos algumas modificações para melhor explorar as possibilidades disponíveis e almentar a experiência com a api. Essas visualizações são possíveis por meio do Swagger e JavaDoc.
 
 ## Modelo conceitual das Dependências
 
