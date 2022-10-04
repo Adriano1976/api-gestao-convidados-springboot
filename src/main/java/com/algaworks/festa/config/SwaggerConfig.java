@@ -16,8 +16,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Classe responsável por habilitar o Swagger na aplicação.
- * A anotação @EnableSwagger2 é responsável em informar ao Spring Boot para ativar o Swagger.
- * A anotação @EnableWebMvc é responsável por habilitar o processo MVC.
+ * <p>
+ * A anotação @EnableSwagger2 — Responsavel em informar ao Spring Boot para ativar o Swagger.
+ * A anotação @EnableWebMvc — Responsável por habilitar o processo MVC.
+ *
+ * @author Adriano Santos
  */
 @Configuration
 @EnableWebMvc
@@ -25,9 +28,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig implements WebMvcConfigurer {
 
     /**
-     * Método responsável por controlar e configurar os caminhos do Swegger.
+     * Metodo responsável por controlar e configurar os caminhos do Swegger e validar a url.
+     * <a href="http://localhost:8080/swagger-ui.html">...</a>
      *
-     * @param registry Objeto responsável em receber e manipular os dados da configuração do Swagger.
+     * @param registry Objeto responsavel em receber e manipular os dados da configuracao do Swagger.
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -42,7 +46,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
     }
 
     /**
-     * Método responsável por definir os aspécitos dos endpoints expostos por ele.
+     * Metodo responsavel por definir os aspecitos dos endpoints expostos por ele.
      *
      * @return Retorna as configurações predefinidas e a url "/swagger-ui.html".
      */
@@ -57,8 +61,8 @@ public class SwaggerConfig implements WebMvcConfigurer {
     }
 
     /**
-     * Método responsável por controlar, configurar e adicionar algumas informações da api.
-     * @return Retorna as informações da api.
+     * Metodo responsável por controlar, configurar e adicionar algumas informacoes da api.
+     * @return Retorna as informacoes da api.
      */
     private ApiInfo getApiInfo() {
 

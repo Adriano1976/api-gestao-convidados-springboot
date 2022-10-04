@@ -18,15 +18,6 @@
     </properties>
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
-        <!-- http://localhost:8080/swagger-ui/index.htmlS -->
-
-<!--        <dependency>-->
-<!--            <groupId>org.springdoc</groupId>-->
-<!--            <artifactId>springdoc-openapi-ui</artifactId>-->
-<!--            <version>1.6.11</version>-->
-<!--        </dependency>-->
-
         <!-- Adicionando a dependência do SpringFox Swagger 2 Doc. Dependency. -->
         <dependency>
             <groupId>io.springfox</groupId>

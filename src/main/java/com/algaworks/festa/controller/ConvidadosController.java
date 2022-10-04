@@ -11,26 +11,28 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- * <h3>Classe responsável em receber a requisição e dizer o nome da view ao framework,
- * para então ser renderizada de volta ao browser do cliente.</h3>
- * <p>A anotação @Controller é para informar que a classe é um componente Spring e que é um controller.</p>
+ * Classe responsavel em receber a requisicao e dizer o nome da view ao framework,
+ * para entao ser renderizada de volta ao navegador do cliente.
+ * A anotacao @Controller tem a funcao de informar que a classe esta sendo um componente Spring e que esta sendo um controller.
+ *
+ * @author Adriano Santos
  */
 @RestController
 @RequestMapping(value = "/convidados")
 public class ConvidadosController {
 
     /**
-     * A anotação @Autowired no objeto convidados, informa que o Spring será responsável por
-     * estânciar o objeto quando for chamado aqui na classe.
+     * A anotacao @Autowired no objeto convidados, informa que o Spring sera responsavel por
+     * estanciar o objeto quando for chamado aqui na classe.
      */
     @Autowired
     private ConvidadosRepositoty convidados;
 
     /**
-     * Método responsáel por listar os convidados para mostrar na view.
-     * A anotação @GetMapping informa que responderá à requisição HTTP do tipo GET deve cair nesse método.
+     * Metodo responsavel por listar os convidados para mostrar na view.
+     * A anotacao {@code @GetMapping} informa que respondera para a requisição HTTP do tipo GET deve cair nesse método.
      * Com isso, o Spring MVC sabe que a view deve ser renderizada para o cliente.
-     * As anotações @ApiResponses e @ApiResponse são responsáveis por especificar os códigos e as mensagens
+     * As anotações {@code @ApiResponses} e {@code @ApiResponse} são responsaveis por especificar os ccdigos e as mensagens
      * de retorno diretamente no controller.
      *
      * @return Retorna a lista de convidados.
@@ -44,16 +46,20 @@ public class ConvidadosController {
     @GetMapping(produces = "application/json")
     public ModelAndView listar() {
         ModelAndView modelAndView = new ModelAndView("ListaConvidados");
+
         modelAndView.addObject(new Convidado());
         modelAndView.addObject("convidados", convidados.findAll());
+
         return modelAndView;
     }
 
     /**
-     * Método responsável por salvar as informações do convidado na base de dados.
+     * Metodo responsavel por salvar as informacwes do convidado na base de dados.
+     * O atributo {@code produces} esta sendo responsavel em indicar o tipo do conteúdo que ele produz.
+     * O atributo {@code consumes} esta sendo responsável em especificar o tipo de conteudo que ele consume.
      *
-     * @param convidado Objeto responsável por receber as informações do convidado e manipular esses dados.
-     * @return Retorna ao formulário inicial após salvar os dados e validado corretamente.
+     * @param convidado Objeto responsavel por receber as informacoes do convidado e manipular esses dados.
+     * @return Retorna ao formulario inicial apo salvar os dados e validado corretamente.
      */
     @PostMapping(produces = "application/json", consumes = "application/json")
     public String salvar(@Validated @RequestBody Convidado convidado) {

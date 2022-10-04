@@ -13,6 +13,7 @@ import java.io.Serializable;
  * @Id Marca a propriedade ‘id’ como identificador de entidade.
  * @GeneratedValue Pede que o Hibernate gere o identificador respectivamente.
  *
+ * @author Adriano Santos
  */
 @Entity
 @Table(name = "`tb_convidado`")
@@ -44,9 +45,9 @@ public class Convidado implements Serializable {
     /**
      * <h3>Construtor da classe Convidado comm argumento</h3>
      *
-     * @param id <p>Objeto responsável em receber um identificador.</p>
-     * @param nome <p>Objeto responsável em receber o nome do convidado.</p>
-     * @param sobrenome <p>Objeto responsável em receber o sobrenome do convidado.</p>
+     * @param id <p>Objeto responsavel em receber um identificador.</p>
+     * @param nome <p>Objeto responsavel em receber o nome do convidado.</p>
+     * @param sobrenome <p>Objeto responsavel em receber o sobrenome do convidado.</p>
      * @param quantidadeAcompanhantes <p>Objeto responsável em receber a quantidade de acompanhantes.</p>
      */
     public Convidado(Long id, String nome, String sobrenome, Integer quantidadeAcompanhantes) {

@@ -10,8 +10,10 @@ import org.springframework.context.annotation.Profile;
 import java.util.Arrays;
 
 /**
- * Classe responsável por fazer os testes de Mostrar, Inserir, Alterar e Apagar os dados
- * conforme a base de dados seguindo a anotação @Profile("dev" ou "test" ou "prod").
+ * Classe responsavel por fazer os testes de Mostrar, Inserir, Alterar e Apagar os dados
+ * conforme a base de dados seguindo a anotacao @Profile("dev" ou "test" ou "prod").
+ *
+ * @author Adriano Santos
  */
 @Configuration
 @Profile("dev")
