@@ -1,76 +1,77 @@
-# Gestao de Convidado
+# Gestão de Convidados
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Adriano1976/api-gestao-convidados-springboot/blob/master/LICENSE) 
 
-# Sobre o projeto
+## Sobre o Projeto
 
 Gestão de Convidados é uma aplicação back End web e mobile construída seguindo as instruções da apostila Produtividade no Desenvolvimento de Aplicações Web com Spring Boot, sendo essa a 2ª Edição e foi organizados por [Normandes José Moreira Junior]( https://www.linkedin.com/in/normandesjr "Site LinkedIn") e [Alexandre Afonso](https://www.linkedin.com/in/alexandreafon "Site LinkedIn").
 
-A aplicação consiste em uma lista de controle de convidados de festas e eventos, onde os dados são coletados, como nome, sobrenome e quantidades de acompanhantes, e depois são listados no app web. Essas visualizações são possíveis por meio do Swagger e JavaDoc.
+A aplicação consiste em uma lista de controle de convidados de festas e eventos, onde os dados são coletados, como nome, sobrenome e quantidades de acompanhantes, e depois são listados no app web. Porém, foram feitos algumas modificações para melhor explorar as possibilidades disponíveis e almentar a experiência com a api. Essas visualizações são possíveis por meio do Swagger e JavaDoc.
 
-## Layout mobile
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+## Modelo conceitual das Dependências
 
-## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
+![gestao-festa 1](https://user-images.githubusercontent.com/17755195/193862725-8d40379c-4074-4f53-b7f1-61f244cb9d29.png)
 
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
+## Modelo conceitual UML
 
-## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
+![gestao-festa 2](https://user-images.githubusercontent.com/17755195/193863043-3b972491-3b3e-4210-b9b2-130cdaf50393.png)
+
+## Documentação JavaDoc
+
+Caso queira navegar e conhecer a extrutura do projeto, basta usar os recursos disponíveis pelo java doc por meio do link disponibilizado para que você posso já ter uma experiência com o projeto antes mesmo de instalar em sua máquina.
+
+![documentação gestão de festa javadoc](https://user-images.githubusercontent.com/17755195/193870848-7341ee92-fc6c-4d51-9764-3f3b0d75036d.png)
+* https://adriano1976.github.io/gestao-de-festa-javadoc/
 
 # Tecnologias utilizadas
-## Back end
+- Intellij Ide
 - Java
 - Spring Boot
+- Spring Web
+- Spring Devtools
 - JPA / Hibernate
+- H2
+- Postgresql
+- Thymeleaf
+- Webjars / Bootstrap / Webjars-locator
+- Swagger-ui / Suagger2
+- HTML / CSS
 - Maven
-## Front end
-- HTML / CSS / JS / TypeScript
-- ReactJS
-- React Native
-- Apex Charts
-- Expo
-## Implantação em produção
-- Back end: Heroku
-- Front end web: Netlify
-- Banco de dados: Postgresql
 
 # Como executar o projeto
 
 ## Back end
-Pré-requisitos: Java 11
+Pré-requisitos: Java 17
 
 ```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+# Clonar repositório
+git clone https://github.com/Adriano1976/api-gestao-convidados-springboot.git
 
-# entrar na pasta do projeto back end
+# Entrar na pasta do projeto gestao-festa
 cd backend
 
-# executar o projeto
+# Executar o Projeto
 ./mvnw spring-boot:run
 ```
 
-## Front end web
-Pré-requisitos: npm / yarn
-
 ```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
-
-# entrar na pasta do projeto front end web
-cd front-web
-
-# instalar dependências
+# Instalar dDpendências
 yarn install
 
-# executar o projeto
+# Executar o Projeto
 yarn start
 ```
 
+# Front End com Swagger
+
+Depois de executar o projeto via terminal ou via IDE, você poderá fazer os testes com os recursos disponibilizados pelo Swagger de acordo com o projeto atual.
+
+![gestao-festa - swagger-ui](https://user-images.githubusercontent.com/17755195/193941528-027f6b9b-8a0f-4f62-ad84-a51f43bd584b.png)
+
+* http://localhost:8080/swagger-ui.html
+
 # Autor
 
-Wellington Mazoni de Andrade
+Adriano Santos
 
-https://www.linkedin.com/in/wmazoni
+https://www.linkedin.com/in/adrianosantos-dev/
