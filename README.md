@@ -70,7 +70,7 @@ Depois de executar o projeto via terminal ou via IDE, você poderá fazer os tes
 
 * http://localhost:8080/swagger-ui.html
 
-# Autor
+# Autor do Projeto
 
 Adriano Santos
 
