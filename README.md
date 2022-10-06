@@ -1,4 +1,4 @@
-# Gestão de Convidados
+# Api Gestão de Convidados - java/Spring Boot
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Adriano1976/api-gestao-convidados-springboot/blob/master/LICENSE) 
 
