@@ -1,4 +1,4 @@
-# Gestão de Convidados
+# Api Gestão de Convidados - java/Spring Boot
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Adriano1976/api-gestao-convidados-springboot/blob/master/LICENSE) 
 
@@ -70,7 +70,7 @@ Depois de executar o projeto via terminal ou via IDE, você poderá fazer os tes
 
 * http://localhost:8080/swagger-ui.html
 
-# Autor
+# Autor do Projeto
 
 Adriano Santos
 
