@@ -2,6 +2,22 @@
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Adriano1976/api-gestao-convidados-springboot/blob/master/LICENSE) 
 
+## Por que devo trabalhar com o Framework Spring Boot?
+
+Existem várias razões pelas quais você deve aprender a trabalhar com o Spring Boot, um dos frameworks mais populares para o desenvolvimento de aplicativos Java:
+
+* Produtividade: O Spring Boot permite que você crie aplicativos Java de maneira rápida e fácil, com configuração mínima. Isso significa que você pode se concentrar no desenvolvimento de recursos de negócios em vez de configuração de infraestrutura.
+
+* Flexibilidade: O Spring Boot é altamente flexível e pode ser facilmente integrado com outras tecnologias Java, como o Spring Framework, Hibernate, JPA, entre outros. Além disso, o Spring Boot suporta diferentes bancos de dados e sistemas operacionais.
+
+* Eficiência: O Spring Boot é altamente otimizado para desempenho e escalabilidade, permitindo que seus aplicativos sejam executados rapidamente e gerenciem grandes volumes de dados.
+
+* Segurança: O Spring Boot inclui várias funcionalidades de segurança, como autenticação e autorização, que ajudam a proteger seus aplicativos contra ameaças externas.
+
+* Comunidade: O Spring Boot é um framework de código aberto com uma grande comunidade de desenvolvedores ativos. Isso significa que você pode encontrar muitos recursos, tutoriais e exemplos disponíveis online para ajudá-lo a aprender e desenvolver aplicativos.
+
+Em resumo, aprender a trabalhar com o Spring Boot pode ajudá-lo a desenvolver aplicativos Java com facilidade, flexibilidade, eficiência e segurança, permitindo que você se concentre no desenvolvimento de recursos de negócios em vez de configuração de infraestrutura. Além disso, a comunidade ativa do Spring Boot oferece suporte e recursos valiosos para ajudá-lo a se tornar um desenvolvedor mais habilidoso.
+
 ## Sobre o Projeto
 
 Gestão de Convidados é uma aplicação back End web e mobile construída seguindo as instruções da apostila Produtividade no Desenvolvimento de Aplicações Web com Spring Boot, sendo essa a 2ª Edição e foi organizados por [Normandes José Moreira Junior]( https://www.linkedin.com/in/normandesjr "Site LinkedIn") e [Alexandre Afonso](https://www.linkedin.com/in/alexandreafon "Site LinkedIn").
