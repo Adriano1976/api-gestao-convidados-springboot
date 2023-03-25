@@ -80,7 +80,21 @@ yarn start
 
 # Front End com Swagger
 
-Depois de executar o projeto via terminal ou via IDE, você poderá fazer os testes com os recursos disponibilizados pelo Swagger de acordo com o projeto atual.
+Swagger é uma ferramenta de software livre para documentar e testar APIs RESTful. Aprender a trabalhar com Swagger pode trazer vários benefícios, como:
+
+* Documentação clara e precisa: O Swagger permite que você crie uma documentação clara e precisa para sua API RESTful, incluindo informações sobre recursos, parâmetros e respostas de API. Isso torna mais fácil para outros desenvolvedores entenderem sua API e usá-la corretamente.
+
+* Testes de API automatizados: O Swagger permite testar sua API RESTful de forma automatizada, poupando tempo e esforço ao permitir testar o comportamento da API, testes de integração, entre outros.
+
+* Padronização: O Swagger ajuda a padronizar a documentação e o teste da sua API, o que pode tornar mais fácil para outros desenvolvedores trabalhar em sua API e evitar erros comuns.
+
+* Integração com outras ferramentas: O Swagger pode ser facilmente integrado com outras ferramentas de desenvolvimento, como frameworks de teste automatizado, gerenciamento de dependências e automação de compilação.
+
+* Comunidade: A ferramenta Swagger tem uma grande comunidade de usuários e desenvolvedores, o que significa que você pode encontrar muitos recursos, tutoriais e exemplos online para ajudá-lo a aprender e usar a ferramenta.
+
+Em resumo, aprender a trabalhar com o Swagger pode ajudá-lo a documentar e testar suas APIs RESTful de maneira mais clara, precisa e padronizada, o que pode tornar mais fácil para outros desenvolvedores trabalharem em sua API e evitar erros comuns. Além disso, a comunidade ativa do Swagger oferece suporte e recursos valiosos para ajudá-lo a se tornar um desenvolvedor mais habilidoso.
+
+Vejamos que depois de executar o projeto via terminal ou via IDE, você poderá fazer os testes com os recursos disponibilizados pelo Swagger de acordo com o projeto atual.
 
 ![gestao-festa - swagger-ui](https://user-images.githubusercontent.com/17755195/193941528-027f6b9b-8a0f-4f62-ad84-a51f43bd584b.png)
 
